@@ -23,7 +23,7 @@ const RoomProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         let response = await Client.getEntries({
-          content_type: "resort",
+          content_type: "Resort",
           order:"sys.createdAt"
         });console.log("Contentful Response: ", response);
 
